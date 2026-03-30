@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+    <style>
+        /*ESTILO GERAL DO TABELA*/
+            
+        table{
+            width:80%;
+            margin:50px auto;
+            border-collapse:collapse ;
+            box-shadow: 0 4px 6px rgb(6, 231, 119);
+            border-radius:12;
+            }
+            caption{
+                font-size:1.8rem;
+                font-weight:bold;
+                color:#18aa66;
+                margin-bottom:20px;
+            }
+            th,td{
+                padding:20px;
+                text-align:left;
+                font-size:1rem;
+                border-bottom:1px solid #18aa66
+            }
+            th{
+                background-color:#29885c;
+                color:#fff;
+                text-transform: uppercase;
+            }
+            thead tr{
+                border-bottom: 3px solid #18aa66;
+            }
+            tbody tr:hover{
+                background-color:#e0f7fa;
+            }
+            tfood{
+                background-color:#e0f7fa;
+            
+            }
+            tfoot td{
+                border-top:2px solid#333;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Produtos</caption>
+        <thead>
+            <tr> 
+                <th>Produto</th>
+                <th>preço</th>
+                <th>Quantidade</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>iPard</td>
+                <td>R$ 3.289,00</td>
+                <td>5</td>
+                <td>R$ 16.455,00</td>
+            </tr>
+            <tr>
+                <td>Sansung S26</td>
+                <td>R$ 5.500,00</td>
+                <td>3</td>
+                <td>R$ 16.500,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3">total</td>
+            <td>R$ 32.955,00</td>
+        </tfoot>
+    </table> 
+</body>
+</html>
