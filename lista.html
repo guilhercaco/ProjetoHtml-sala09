@@ -23,6 +23,14 @@
             color: #00bcd4;
             margin:20px 0;
             text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        h2{
+            font-size: 1.8rem;
+            color: #00bcd4;
+            margin:20px 0;
+            text-transform: uppercase;
         }
         ol,ul,dl{
             margin:0;
@@ -31,7 +39,7 @@
             width:100%;
             max-width:600px;
         }
-        ol il, ul lí{
+        ol li, ul li{
             bottom: #fff;
             background-color: #ffff;
             border-radius: 8px;
@@ -40,8 +48,8 @@
             box-shadow:0 4px 6px rgba(0,0,0,0.1)
 
         }
-        ol il:hover,ul lí:hover{
-            transform:translate(-5px);
+        ol li:hover,ul lí:hover{
+            transform:translateY(-5px);
             background-color:#00bcd4;
             color:#ffff;
 
@@ -51,6 +59,26 @@
             color:#00bcd4;
             margin-top:20px;
         }
+        dl dd{
+            padding: 8px 16px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 8px;
+            transition: transform 0.3 ease, background-color 0.3 ease;
+        }
+        dl dd:hover{
+            transform: translateY(-5px);
+            background-color: #00bcd4;
+            color:#FFF;
+        }
+        h1,h2,ol li,ul li, dl dd{
+            transition: transform 0.3 ease, box-shadow 0.3 ease;
+        }
+        h1:hover,h2:hover,ol li:hover, ul li:hover, dl dd:hover{
+            box-shadow: 0 6px 12px rgba(0,188,212,0.3);
+        }
+
     </style>
 </head>
 <body>
@@ -72,7 +100,7 @@
     </ul>
     <!--lista de definição-->
     <h2>principais termos do glossário de cloud computing</h2>
-    <d1>
+    <dl>
         <dt>BaaS</dt>
         <dd>Backend Como Serviço</dd>
         <dt>Iaas</dt>
@@ -81,6 +109,6 @@
         <dd>Platafroma Como Serviço</dd>
         <dt>SaaS</dt>
         <dd>Sofware Como Serviço</dd>
-    </d1>
+    </dl>
 </body>
 </html>
